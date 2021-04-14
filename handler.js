@@ -140,10 +140,4 @@ function getData(url){
   })
 }
 
-app.listen(3000, () =>{
-
-  console.log('Escuchando puerto: ', 3000)
-
-})
-
 module.exports.general = serverless(app);
