@@ -61,7 +61,7 @@ app.post('/personas', (req, res) => {
 app.get('/personas', (req, res) =>{
 
   const params = {
-    TableName: 'personas-table-dev',
+    TableName: PERSONAS_TABLE,
   };
   
   dynamoDB.scan(params, (error, result) => {
